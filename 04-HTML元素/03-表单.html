@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <fieldset>
+    <legend>必填信息</legend>
+    <!-- 1.手机输入框 -->
+    <div>
+      <span>手机：</span>
+      <input type="text">
+    </div>
+
+    <!-- 2.密码输入框 -->
+    <div>
+      <span>密码：</span>
+      <input type="password">
+    </div>
+    
+    <!-- 3.验证码输入框 -->
+    <div>
+      <span>验证码：</span>
+      <input type="text">
+
+      <!-- 3.1 button的实现形式一: button -->
+      <!-- <button>获取验证码</button> -->
+
+      <!-- 3.2 button的实现形式二: input -->
+      <input type="button" value="获取验证码">
+    </div>
+
+  </fieldset>
+  <fieldset>
+    <legend>选填信息</legend>
+    <!-- 4.照片选择 -->
+    <div>
+      <span>照片：</span>
+      <input type="file" value="选择文件">
+    </div>
+
+    <!-- 5.性别选择 -->
+    <div>
+      <span>性别：</span>
+      男<input type="radio" name="sex">
+      女<input type="radio" name="sex">
+    </div>
+
+    <!-- 6.爱好选择 -->
+    <div>
+      <span>兴趣：</span>
+      唱歌<input type="checkbox" name="hobbies">
+      跳舞<input type="checkbox" name="hobbies">
+      rap<input type="checkbox" name="hobbies">
+      篮球<input type="checkbox" name="hobbies">
+    </div>
+  </fieldset>
+</body>
+</html>

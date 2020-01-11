@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    /* content内容可以为空, 但不能省略 */
+    span::before {
+      content: "";
+      background-color: #0f0;
+      display: inline-block;
+      width: 100px;
+      height: 30px;
+      margin-right: 20px;
+    }
+    /* content 内容不仅可以为文字, 也可以是图片 */
+    span::after {
+      /* content: "123";
+      color: purple; */
+
+      content: url(../pic/test01.jpg);
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <span>我是span元素</span>
+</body>
+</html>

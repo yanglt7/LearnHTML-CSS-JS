@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    [title='one'] {
+      font-size: 30px;
+    }
+    [title='one span'] {
+      text-decoration: underline;
+    }
+    /* title包含one */
+    [title*='one'] {
+      color: #f00;
+    }
+    /* title以one开头 */
+    [title^='one'] {
+      text-decoration: overline;
+    }
+    /* title以one结尾 */
+    [title$='one'] {
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <span title="one span">one span</span>
+    <p title="one">one</p>
+    <p title="one test">one test</p>
+    <p title="two one test">two one test</p>
+    <p title="text one">text one</p>
+  </div>
+</body>
+</html>

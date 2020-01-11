@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    /* 第3个子元素 */
+    :nth-child(3) {
+      color: red;
+    }
+
+    /* 交集选择器: 1.必须是p元素 2.p元素是子元素中的第三个元素 */
+    p:nth-child(3) {
+      font-size: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p>p文字内容1</p>
+    <p>p文字内容2</p>
+    <p>p文字内容3</p>
+    <p>p文字内容4</p>
+    <p>p文字内容5</p>
+  </div>
+
+  <p>
+    <span>span文字内容1</span>
+    <span>span文字内容2</span>
+    <span>span文字内容3</span>
+    <span>span文字内容4</span>
+    <span>span文字内容5</span>
+  </p>
+
+  <div>
+    <strong>strong文字内容1</strong>
+    <strong>strong文字内容2</strong>
+  </div>
+</body>
+</html>

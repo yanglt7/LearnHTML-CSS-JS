@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    /* 1.n: 0, 1, 2, 3, 4, 5 自然数 */
+    /* p:nth-child(n) {
+      color: red;
+    } */
+
+    /* 2.even / 2n: 2, 4, 6, 8, 10 偶数 */
+    /* p:nth-child(2n) {
+      color: red;
+    } */
+    /* p:nth-child(even) {
+      color: red;
+    } */
+
+    /* 3.odd/ 2n+1 / 2n-1: 1, 3, 5, 7, 9 奇数 */
+    /* p:nth-child(2n+1) {
+      color: red;
+    } */
+    /* p:nth-child(odd) {
+      color: blue;
+    } */
+
+    /* 4.3n: 3, 6, 9 3的倍数*/
+    /* 3n+2: 2, 5, 8 */
+    /* p:nth-child(3n+2) {
+      color: red;
+    } */
+
+    /* 5.-n+5: 1, 2, 3, 4, 5 前2个数 */
+    p:nth-child(-n+2) {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p>p文字内容1</p>
+    <p>p文字内容2</p>
+    <p>p文字内容3</p>
+    <p>p文字内容4</p>
+    <p>p文字内容5</p>
+  </div>
+</body>
+</html>

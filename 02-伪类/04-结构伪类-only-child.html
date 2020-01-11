@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    /* 1.父元素的唯一子元素 */
+    /* body :only-child {
+      color: #f00;
+    } */
+
+    /* 2.父元素的唯一同类型子元素 */
+    body :only-of-type {
+      color: #f00;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p>p文字内容1</p>
+    <p>
+      <span>span元素</span>
+    </p>
+    <div>文字内容2</div>
+  </div>
+  <div>
+    <a href="#">文字内容3</a>
+    <strong>文字内容4</strong>
+  </div>
+</body>
+</html>
