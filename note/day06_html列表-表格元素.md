@@ -52,16 +52,3 @@
 * border-spacing
   * 设置单元格之间的水平/垂直间距
 
-
-
-## 四、HTML-表单元素
-
-* input
-  * text
-  * password
-  * file
-  * button
-  * radio
-  * checkbox
-* fieldset/legend
-
