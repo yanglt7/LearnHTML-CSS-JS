@@ -36,7 +36,7 @@
 * placeholder
   * 默认显示的文字
 
-![image-20200112134056068](day07_html表单元素+css元素类型.assets/image-20200112134056068.png)
+![image-20200112134056068](day07_html表单元素.assets/image-20200112134056068.png)
 
 * textarea
 
@@ -72,31 +72,31 @@
 
 ### 1.3 fieldset - legend
 
-![image-20200112134147377](day07_html表单元素+css元素类型.assets/image-20200112134147377.png)
+![image-20200112134147377](day07_html表单元素.assets/image-20200112134147377.png)
 
 
 
-![image-20200112134513746](day07_html表单元素+css元素类型.assets/image-20200112134513746.png)
+![image-20200112134513746](day07_html表单元素.assets/image-20200112134513746.png)
 
 
 
 ### 1.4 按钮的实现方式
 
-![image-20200112141659072](day07_html表单元素+css元素类型.assets/image-20200112141659072.png)
+![image-20200112141659072](day07_html表单元素.assets/image-20200112141659072.png)
 
 
 
 ### 1.5 input和label的关系
 
-![image-20200112142728734](day07_html表单元素+css元素类型.assets/image-20200112142728734.png)
+![image-20200112142728734](day07_html表单元素.assets/image-20200112142728734.png)
 
-![01-input&label](day07_html表单元素+css元素类型.assets/01-input&label-1578824888858.gif)
+![01-input&label](day07_html表单元素.assets/01-input&label-1578824888858.gif)
 
 
 
 ### 1.6 CSS reset(outline:none)
 
-![image-20200112143908046](day07_html表单元素+css元素类型.assets/image-20200112143908046.png)
+![image-20200112143908046](day07_html表单元素.assets/image-20200112143908046.png)
 
 
 
@@ -132,57 +132,3 @@
   * 默认是 unknown
 * enctype
   * input type有一个file类型时, 需要设置成 multipart/form-data
-
-
-
-## 二、元素类型
-
-### 1.1 元素的显示类型划分
-
-#### 1) 块级元素(block-level elements)
-
-* 独占父元素的一行
-* div - p
-* 可以设置宽高
-* 高度默认由内容决定
-
-
-
-#### 2) 行内级元素(inline-level elements)
-
-* 和其他元素可以在同一显示
-* span - strong - img - input - iframe
-
-
-
-### 1.2 元素的内容类型划分
-
-#### 1) 替换元素(replaced elements)
-
-* 元素本身没有内容, 浏览器根据元素的类型和属性, 来决定元素的具体显示内容
-* img - iframe
-* 替换元素都是行内元素
-* 可以设置宽高
-
-#### 2) 非替换元素(non-replaced elements)
-
-* 和替换元素相反, 元素本身是有实际内容的, 浏览器会直接将内容显示出来, 而不需要根据元素类型和属性来判断到底显示什么内容
-* 不可随意设置宽高
-* 宽高由内容决定
-
-![image-20200112162242189](day07_html表单元素+css元素类型.assets/image-20200112162242189.png)
-
-
-
-### 1.3 display
-
-* inline
-  * 让元素显示为行内级元素
-* block
-  * 让元素显示为块级元素
-* none
-  * 让元素隐藏，不占空间
-* inline-block
-  * 让元素同时具备行内级、块级元素特征
-  * 可以和其他元素在同一行显示
-  * 可以设置宽高

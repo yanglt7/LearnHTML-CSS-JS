@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    /* common.css */
+    .wrap {
+      width: 1000px;
+      background-color: #f5f5f5;
+      margin: 0 auto;
+    }
+
+    /* reset css */
+    body, ul, p, h5 {
+      margin: 0;
+      padding: 0;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    /* 具体样式 */
+    li, p, h5 {
+      /* 使h5和p的内容对齐 法一: 利用浮动 */
+      /* float: left; */
+
+      /* 使h5和p的内容对齐 法二: vertical-align: */
+      vertical-align: middle;
+      display: inline-block;
+    }
+
+    .service ul li {
+      margin-left: 12px;
+      margin-right: 25px;
+    }
+
+    .service ul li h5 {
+      text-indent: -999px;
+      width: 36px;
+      height: 42px;
+
+      background-image: url(../pic/jd_sprite.png);
+      background-position: 0 -192px;
+    }
+
+    /* 提取sprite图 法一: 给每个h5增加一个类 */
+    /* 提取sprite图 法二: 利用nth-child */
+    .service ul li:nth-child(2) h5 {
+      background-position: -41px -192px;
+    }
+
+    .service ul li:nth-child(3) h5 {
+      background-position: -82px -192px;
+    }
+
+    .service ul li:nth-child(4) h5 {
+      background-position: -123px -192px;
+    }
+
+    .service ul li p {
+      height: 42px;
+      line-height: 42px;
+      color: #444444;
+      font-size: 18px;
+      font-weight: 700;
+      
+      margin-left: 3px;
+    }
+  </style>
+</head>
+<body>
+  <div class="service wrap">
+    <ul>
+      <li>
+        <h5 class="duo">多</h5>
+        <p>品类齐全，轻松购物</p>
+      </li>
+      <li>
+        <h5 class="kuai">快</h5>
+        <p>多仓直发，极速配送</p>
+      </li>
+      <li>
+        <h5 class="hao">好</h5>
+        <p>正品行货，精致服务</p>
+      </li>
+      <li>
+        <h5 class="sheng">省</h5>
+        <p>天天低价，畅选无忧</p>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>

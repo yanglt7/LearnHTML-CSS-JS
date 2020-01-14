@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .box {
+      background-color: #f00;
+      width: 500px;
+      height: 300px;
+
+      background-image: url(../pic/test01.jpg);
+      background-repeat: no-repeat;
+
+      /* 1.auto 以本身大小展示 */
+      /* background-size: auto; */
+
+      /* 2. cover 对背景图片进行拉伸, 让背景图片铺满元素 */
+      /* background-size: cover; */
+
+      /* 3.contain 对背景图片进行拉伸, 某一方向铺满元素后不再拉伸, 保持宽高比 */
+      /* background-size: contain; */
+
+      /* 4.设置值: 百分比或具体大小 */
+      /* background-size: 30% 50%; */
+      background-size: 150px 150px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
