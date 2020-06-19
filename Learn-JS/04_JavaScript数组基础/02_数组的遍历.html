@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var names = ['Kobe', 'James', 'Andy', 'Jasper'];
+
+    for (var i = 0; i < names.length; i++) {
+      console.log(names[i]);
+    }
+
+    // ES6
+    for (let i in names) {
+      console.log(names[i]);
+    }
+
+    for (let name of names) {
+      console.log(name);
+    }
+  </script>
+</body>
+</html>

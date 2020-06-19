@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 1. 非严格相等 == 会进行隐式转换
+    // string -> number 
+    var num1 = 123;
+    var str1 = '123';
+    console.log(num1 == str1); // true
+
+    // string -> number, boolean -> number
+    var flag = true; // 1
+    var str2 = 'true'; // NaN
+    console.log(flag == str2); // false
+
+    // 2. 严格相等 === 数据相等, 类型相等
+    console.log(num1 === str1); // false
+    console.log(flag === str2); // false
+
+    // 3. != 会进行隐式转换
+    console.log(num1 != str1); // false
+    console.log(flag != str2); // true
+
+    // 4. !== 
+    console.log(num1 !== str1); // true
+    console.log(flag !== str2); // true
+  </script>
+</body>
+</html>

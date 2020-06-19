@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var info = {
+      name: 'yanlt',
+      age: '23',
+
+      // eat: function() {
+      //   console.log('eating');
+      // }
+    }
+
+    // 1. 与运算特殊用法
+    // if (info.eat) {
+    //   info.eat();
+    // }
+
+    // 短路与: 有一个条件为 false, 后续判断不再执行
+    info.eat && info.eat();
+
+    console.log('----------------');
+
+    // 2. 或运算特殊用法
+    // 短路或: 有一个条件为true, 后续判断不再执行
+    var message = info.height || info.name || info.age;
+    console.log(message); 
+  </script>
+</body>
+</html>

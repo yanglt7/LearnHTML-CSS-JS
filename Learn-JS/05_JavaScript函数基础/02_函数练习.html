@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 1.实现一个加法计算器
+    function sum(num1, num2) {
+      var result = num1 + num2;
+      return result;
+    }
+
+    var total = sum(10, 20);
+    console.log(total);
+
+    // 2.计算矩形面积
+    function calRectArea(width, height) {
+      return width * height;
+    }
+    var area = calRectArea(10, 20);
+    console.log(area);
+
+    // 3.计算圆形面积
+    function calCircleArea(radius) {
+      // return 3.14 * radius * radius;
+      return Math.PI * radius * radius;
+    }
+    var area2 = calCircleArea(5);
+    console.log(area2);
+
+    // 补充: 获取π的值
+    // var pi = Math.PI;
+  
+    // 4.传入n,计算1~n的和
+    function calNSum(n) {
+      var result = 0;
+      for (var i = 1; i <= n; i++) {
+        result += i;
+      }
+      return result;
+    }
+
+    var nsum = calNSum(10);
+    console.log(nsum);
+
+    // 5.传入一个数组, 对数组进行反转
+    function revArray(arr) {
+      for (var i = 0; i < arr.length / 2; i++) {
+        var temp = arr[i];
+        arr[i] = arr[arr.length-i-1];
+        arr[arr.length-i-1] = temp;
+      }
+      return arr;
+    }
+    var nums = [12, 33, 24, 54, 66, 62, 98];
+    var revarr = revArray(nums);
+    console.log(revarr);
+
+    // 6.传入一个数组, 对数组内的数字进行排序
+    function sortArray(arr) {
+      for (var i = arr.length - 1; i > 0; i--) {
+        for (var j = 0; j < i; j++) {
+          if (arr[j] > arr[i]) {
+            var temp = arr[j];
+            arr[j] = arr[i];
+            arr[i] = temp;
+          }
+        }
+      }
+      return arr;
+    }
+    var nums = [12, 33, 24, 54, 66, 62, 98];
+    var sortarr = sortArray(nums);
+    console.log(sortarr);
+
+  </script>
+</body>
+</html>

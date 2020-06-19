@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var num = 123;
+    var message = undefined;
+    var obj = null;
+    var flag = true;  
+
+    // 1. 调用toString()方法
+    console.log(num.toString());
+    // console.log(message.toString()); undefined不适用
+    // console.log(obj.toString()); null不适用
+    console.log(flag.toString());
+
+    // 2.使用String()函数
+    console.log(String(num));
+    console.log(String(message));
+    console.log(String(obj));
+    console.log(String(flag));
+
+    // 3. 字符串拼接: 变量 + ""
+    // 隐式转换: 任何数据类型和字符串通过 + 运算符拼接, 最终结果均转化成字符串类型
+    console.log(num + '');
+    console.log(message + '');
+    console.log(obj + '');
+    console.log(flag + '');
+    
+  </script>
+</body>
+</html>

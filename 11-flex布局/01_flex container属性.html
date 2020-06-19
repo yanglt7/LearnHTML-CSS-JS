@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    
+
+    .box {
+      width: 500px;
+      height: 500px;
+      background-color: orange;
+      margin: 0 auto;
+
+      /* 1. 开启flex布局: 
+      flex: 块级元素
+      inline-flex: 行内元素
+       */
+      display: flex;
+
+      /* 2. flex-direction: 决定主轴方向:
+      row: 默认, 主轴从左至右
+      row-reverse: 主轴从右至左
+      column: 主轴从上至下
+      columns-reverse: 主轴从下至上
+       */
+      /* flex-direction: row; */
+
+      /* 3. justify-content: 决定 flex items 在主轴的对齐方式 */
+      /* justify-content: space-around; */
+
+      /* 4. align-items: 决定flex items 在交叉轴的对齐方式 */
+      /* align-items: normal; */
+
+      /* 5. 结论：默认情况下，所有的flex items都会在同一行显示 */
+      /* flex-wrap: nowrap; 默认不换行 */
+      /* flex-wrap: nowrap; */
+
+      /* 6. flex-flow: flex-direction和flex-wrap的缩写属性 */
+      /* flex-flow: row-reverse nowrap; */
+
+      /* 7. align-content: 决定多行的flex items在交叉轴上的对齐方式 */
+    }
+
+    .item {
+      width: 100px;
+      height: 100px;
+      color: #fff;
+      line-height: 100px;
+      text-align: center;
+    }
+
+    .item1 {
+      background-color: #f00;
+    }
+
+    .item2 {
+      background-color: #0f0;
+    }
+
+    .item3 {
+      background-color: #00f;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="item item1">item1</div>
+    <div class="item item2">item2</div>
+    <div class="item item3">item3</div>
+  </div>
+  <strong>strong元素</strong>
+</body>
+</html>

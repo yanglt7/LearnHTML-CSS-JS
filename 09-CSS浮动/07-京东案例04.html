@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 1190px;
+            /* height: 370px; */
+            background-color: #f00;
+            margin: 0 auto;
+        }
+
+        .wrap {
+            margin-right: -10px;
+        }
+
+        .section {
+            width: 290px;
+            margin-right: 10px;
+            background-color: yellowgreen;
+            float: left;
+        }
+
+        .section01 {
+            height: 370px;
+        }
+
+        .section02 {
+            height: 180px;
+        }
+
+        .last {
+            margin-top: 10px;
+        }
+
+        /* .clear-fix {
+            clear: both;
+        } */
+
+        /* .container::after {
+            content: "";
+            clear: both;
+            display: block;
+        } */
+        .clear-fix::after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container clear-fix">
+        <div class="wrap">
+            <div class="section section01"></div>
+            <div class="section section01"></div>
+            <div class="section section02"></div>
+            <div class="section section02"></div>
+            <div class="section section02 last"></div>
+            <div class="section section02 last"></div>
+        </div>
+        <!-- <div class="clear-fix"></div> -->
+        <!-- <br clear="all"> -->
+    </div>
+
+    <!-- <div class="clear-fix"></div> -->
+
+    <p>其他内容</p>
+    <p>其他内容</p>
+    <p>其他内容</p>
+    <p>其他内容</p>
+    <p>其他内容</p>
+    <p>其他内容</p>
+    <p>其他内容</p>
+</body>
+</html>

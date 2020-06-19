@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      display: inline-block;
+      border-left: 1px solid #ff1e32;
+      border-bottom: 1px solid #ff1e32;
+    }
+
+    span {
+      display: inline-block;
+      text-align: center;
+      width: 80px;
+      height: 30px;
+      line-height: 30px;
+      border-top: 1px solid #ff1e32;
+      border-right: 1px solid #ff1e32;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    // while循环
+    var i = 0;
+    while (i < 10) {
+      console.log(i, "Hello World!");
+      i++;
+    }
+
+    // do while循环
+    var n = 0;
+    do {
+      console.log(n, "Hello World!");
+      n++;
+    } while (n < 10);
+
+    // for循环
+    for (var j = 0; j < 10; j++) {
+      console.log(j, "Hello World!");
+    }
+
+    for (var p = 0; p < 9; p++) {
+      for (var q = 0; q <= p; q++) {
+        document.write("❤ ");
+      }
+      document.write('<br>');
+    }
+
+    document.write('<div>');
+    for (var a = 1; a < 10; a++) {
+      for (var b = 1; b <= a; b++) {
+        var str = '<span>' + b + '*' + a + '=' + a*b + '</span>';
+        document.write(str);
+        if (a === b) {
+          document.write('<br>');
+        }
+      }
+    }
+    document.write('</div>');
+  </script>
+</body>
+</html>

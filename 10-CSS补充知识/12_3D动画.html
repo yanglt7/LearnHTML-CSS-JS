@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      /* 视距 */
+      perspective: 1000px;
+      position: relative;
+      margin-top: 100px;
+
+      transform-style: preserve-3d;
+      transform: rotateY(-45deg);
+    }
+
+    .item {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto;
+
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    .item1 {
+      background-color: #f00;
+      transform: translateZ(-60px);
+    }
+
+    .item2 {
+      background-color: #0f0;
+      transform: translateZ(-120px);
+    }
+
+    .item3 {
+      background-color: #00f;
+      transform: translateZ(-180px);
+    }
+
+    .item4 {
+      background-color: #ff0;
+      transform: translateZ(-240px);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item item1"></div>
+    <div class="item item2"></div>
+    <div class="item item3"></div>
+    <div class="item item4"></div>
+  </div>
+</body>
+</html>

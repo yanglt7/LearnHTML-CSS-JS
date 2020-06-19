@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: orange;
+            height: 300px;
+
+            /* 居中法一: 
+            line-height = height
+            vertical-align: middle
+            font-size: 0 */
+
+            /* line-height: 300px; */
+            /* font-size: 0; */
+
+        }
+
+        img {
+            /* vertical-align: middle; */
+
+            /* 居中法二: 利用相对定位 
+            margin-top: 相对父元素宽度
+            top: 相对父元素高度 */
+            
+            position: relative;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="../pic/test01.jpg" alt="">
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html {
+      font-size: 30px;
+    }
+
+    .container {
+      font-size: 12px;
+      width: 600px;
+      height: 600px;
+      background-color: #f00;
+    }
+
+    .box {
+      /* 
+      rem 相对于根元素的字体大小 
+      20rem = 20 * 30px = 600px
+      */
+      width: 20rem;
+      height: 300px;
+      background-color: orange;
+      color: #fff;
+
+      /* 
+      rem: root em
+      相对于根元素, 即html元素字体大小    
+      2rem = 2 * 30px = 60px
+      */
+      font-size: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">文字内容</div>
+  </div>
+</body>
+</html>

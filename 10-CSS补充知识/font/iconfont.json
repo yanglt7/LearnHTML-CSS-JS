@@ -1,0 +1,30 @@
+{
+  "id": "1643903",
+  "name": "考拉海购",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "602165",
+      "name": "arrow down",
+      "font_class": "arrowdown-copy",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "8783187",
+      "name": "箭头",
+      "font_class": "dibudaohanglan-",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "10561554",
+      "name": "Arrow, rotation, interface",
+      "font_class": "Arrowrotationinterface",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    }
+  ]
+}

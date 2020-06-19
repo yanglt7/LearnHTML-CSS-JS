@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 1.在html元素中直接执行JavaScript代码(不推荐) -->
+  <a href="#" onclick="alert('我是弹窗')">弹窗</a>
+  <a href="javascript: alert('我也是弹窗')">弹窗</a>
+
+  <!-- 2.书写到script标签中 -->
+  <script>
+      alert('我是内部引入的弹窗');
+  </script>
+
+  <!-- 3.从外部引入js文件 -->
+  <script src="./js/test.js"></script>
+</body>
+</html>

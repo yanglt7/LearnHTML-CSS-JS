@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    
+    var nums = [12, 33, 22, 45, 54, 36, 78, 99];
+    // 1.反向遍历数组里面的每一个元素
+    // for (var i = nums.length - 1; i >= 0; i--) {
+    //   console.log(nums[i]);
+    // }
+    
+    // 2.将数组中所有元素用-进行分割, 拼接成一个字符串
+    // var message = '';
+    // for (var i = 0; i < nums.length; i++) {
+    //   message += nums[i];
+    //   if ( i !== nums.length - 1) {
+    //     message += '-';
+    //   }
+    // }
+    // console.log(message);
+
+    // 3.求一个都是数字的数组中的数字总和和平均值
+    // var total = 0;
+    // var avg = 0;
+    // for (var i = 0; i < nums.length; i++) {
+    //   total += nums[i];
+    // }
+    // avg = total / nums.length;
+    // console.log(total);
+    // console.log(avg);
+
+    // 4.求一个都是数字的数组中的最大数字
+    // var max = nums[0];
+    // for (var i = 1; i < nums.length; i++) {
+    //   if (nums[i] > max) {
+    //     max = nums[i];
+    //   }
+    // }
+    // console.log(max);
+
+    // 5.反转一个数组的内容
+    // console.log(nums);
+    // for (var i = 0; i < nums.length / 2; i++) {
+    //   var temp = nums[i];
+    //   nums[i] = nums[nums.length-1-i];
+    //   nums[nums.length-1-i] = temp;
+    // }
+    // console.log(nums);
+
+    // 6.对一个数组中的数字进行排序 : 冒泡
+    // for (var i = nums.length - 1; i > 0; i--) {
+    //   for (var j = 0; j < i; j++) {
+    //     if (nums[j] > nums[i]) {
+    //       var temp = nums[j];
+    //       nums[j] = nums[i];
+    //       nums[i] = temp;
+    //     }
+    //   }
+    // }
+    // console.log(nums);
+
+    // 7.对一个数组中的数字进行排序 : 选择
+    function sortArray(arr) {
+      for (var i = 0; i < arr.length; i++) {
+        for (var j = i+1; j < arr.length; j++) {
+          if (arr[i] > arr[j]) {
+            var temp = arr[j];
+            arr[j] = arr[i];
+            arr[i] = temp;
+          }
+        }
+      }
+      return arr;
+    }
+    var res = sortArray(nums);
+    console.log(res);
+  </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 1.函数的定义方式一: 函数的声明写法
+    // name属性的值: 函数的名字
+    function test01() {
+      console.log('test01被调用');
+    }
+    test01();
+
+    // 2.函数的定义方式二: 函数表达式
+    // 2.1 命名函数表达式
+    // name属性的值: 函数的名字
+    var abc = function test02() {
+      console.log('test02被调用');
+    }
+    abc();
+
+    // 2.2 匿名函数表达式
+    // name属性的值: 赋值的变量的名字
+    var test03 = function() {
+      console.log('test03被调用');
+    }
+    test03();
+
+    // 3.函数都有一个属性: name
+    console.log(test01.name);
+    console.log(abc.name);
+    console.log(test03.name);
+    
+  </script>
+</body>
+</html>

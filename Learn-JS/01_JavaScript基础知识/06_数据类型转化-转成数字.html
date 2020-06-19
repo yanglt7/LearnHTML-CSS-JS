@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 1.Number()
+    // 1.1 string类型转化成数字类型
+    var message1 = "123";
+    var num1 = Number(message1);
+    console.log(num1, typeof(num1)); // 123 number
+
+    var message2 = 'abc';
+    var num2 = Number(message2);
+    console.log(num2, typeof(num2)); // NaN number
+
+    // 1.2 将Boolean类型转化成数字类型
+    console.log(Number(true));  // 1
+    console.log(Number(false)); // 0
+
+    // 1.3 将undefined类型转化成数字类型
+    console.log(Number(undefined)); // NaN
+    console.log(Number(null));      // 0
+
+    // 2. parseInt()
+    var str1 = '123';
+    var num1 = parseInt(str1);
+    console.log(num1, typeof num1); // 123 number
+    
+    var str2 = 'abc123';
+    var num2 = parseInt(str2);
+    console.log(num2, typeof num2); // NaN number
+
+    var str3 = '123abc';
+    var num3 = parseInt(str3);
+    console.log(num3, typeof num3); // 123 Number
+    
+    var str4 = '123.45';
+    var num4 = parseInt(str4);
+    console.log(num4, typeof num4); // 123 Number
+    
+    var str5 = '111';
+    var num5 = parseInt(str5, 2);
+    console.log(num5, typeof num5); // 7 Number
+
+    // 3. parseFloat()
+    var s1 = '123.45';
+    var n1 = parseFloat(s1);
+    console.log(n1, typeof n1); // 123.45 number
+    
+    var s2 = '123.45.67';
+    var n2 = parseFloat(s2);
+    console.log(n2, typeof n2); // 123.45 number
+  </script>
+</body>
+</html>

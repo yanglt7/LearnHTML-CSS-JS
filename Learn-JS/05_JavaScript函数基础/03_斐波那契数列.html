@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 传入数字n, 求斐波那契数列的第n个数字
+    // 1 1 2 3 5 
+    // 方式一: 循环实现
+    function Fibonacci1(n) {
+      var result = 0;
+      if (n == 0) {
+        return result;
+      } else if (n == 1 || n == 2) {
+        result = 1;
+      } else {
+        var num1 = 1;
+        var num2 = 1;
+        result = num1 + num2;
+        for (var i = 3; i <= n; i++) {
+          num1 = num2;
+          num2 = result;
+          result = num1 + num2;
+        }
+      }
+      return result;
+    }
+    var n1 = prompt();
+    var res1 = Fibonacci1(n1);
+    console.log(res1);
+
+    // 方式二: 递归实现
+    function Fibonacci2(n) {
+      if (n == 0 || n == 1) {
+        return n;
+      }
+      return Fibonacci2(n-1) + Fibonacci2(n-2);
+    }
+    var n2 = prompt();
+    var res2 = Fibonacci2(n2);
+    console.log(res2);
+
+  </script>
+</body>
+</html>

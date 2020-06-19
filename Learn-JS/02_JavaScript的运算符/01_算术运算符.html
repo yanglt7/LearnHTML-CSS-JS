@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var num1 = 20;
+    var num2 = 4;
+    var str1 = 'Hello';
+    var str2 = 'World!';
+
+    // 1. + - * / %
+    console.log(+num1);
+    console.log(num1 + num2);
+    console.log(str1 + num1);
+    console.log(str1 + str2);
+    console.log(num1 - num2);
+    console.log(num1 * num2);
+    console.log(num1 / num2);
+    console.log(num1 % num2);
+
+    // 2. ++ --
+    // 2.1 自增 
+    var n1 = 100;
+    n1++; // ++后置 101
+    // ++n1; // ++前置 101
+    console.log(n1); // 101
+
+    // 2.2 自减
+    var n2 = 100;
+    n2--; // --前置 99
+    // --n2; // --后置 99
+    console.log(n2); // 99
+
+    // 2.3 前置和后置的区别: 参与运算时
+    var num = 100;
+    // num++: 先使用, 再+1
+    // ++num: 先+1, 再使用
+    // result = num++ + 10; // 110
+    result = ++num + 10; // 111
+    console.log(result);
+
+    // 练习
+    var a = 10;
+    var b;
+
+    // b = 10 + 11 = 21
+    // b = a++ + a++;
+    // console.log(b); // 21
+
+    // b = 10 + 12 = 22
+    // b = a++ + ++a;
+    // console.log(b); // 22
+
+    // b = 11 + 11 = 22
+    // b = ++a + a++;
+    // console.log(b); // 22
+
+    // b = 11 + 12 = 23
+    b = ++a + ++a;
+    console.log(b); // 23
+    
+  </script>
+</body>
+</html>
